@@ -7,7 +7,7 @@ class Admin < ApplicationRecord
   VALEMAIL = /[0-9a-z]*@[0-9a-z]*\.[0-9a-z]*/i
   validates :email, presence: true, length: { maximum: 256 },
             format: { with: VALEMAIL }, uniqueness: { case_sensitive: false }
-  validates :password, presence: true, length: {maximum 256}
+  validates :password, presence: true, length: { maximum: 256 }
 
   has_secure_password
 end

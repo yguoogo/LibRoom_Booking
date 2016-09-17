@@ -1,0 +1,22 @@
+<h1>Admins Profile</h1>
+<div>
+  <table>
+    <tr>
+      <th>Name</th>
+      <td><%= @admin.name %></td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td><%= @admin.email %></td>
+    </tr>
+</table>
+<%= link_to "Edit profile", '#' %>
+</div>
+
+<div>
+  <%= link_to "View all Admins", admins_path %>
+  <br>
+  <%= link_to "View all Rooms", '#' %>
+  <br>
+  <%= link_to "View all Library Members", '#' %>
+</div>
